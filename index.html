@@ -1,23 +1,60 @@
 <!DOCTYPE html> <!-- Declaration defines this document to be HTML -->
 <html> <!-- Element is the root element of an HTML page -->
     <head> <!-- Element contains meta information about the document -->
-    <meta charset="utf-8"> <!-- Character encoding for Unicode -->
     <title>School Schedule</title> <!-- Element specifies a title for the document -->
     </head>
     
 <body> <!-- Element contains the visible page content -->
-
+        
+        <!-- A class allows you to name a container or element so you can target it. When we style this container, we are targeting it's class name "title" -->
         <div class="title"> <!-- A container element that acts as the parent to the heading title, div's are used to group elements -->
             <h1>Saint Michael Catholic High School</h1> <!-- This element is a child of the "title" parent div -->
         </div>
     
         <img src="logo.jpeg" alt="logo of school">
     
+        <div class="table">
+          <table>
+          <tr>
+            <th>Subjects</th>
+            <th>Teachers</th> 
+            <th>Periods</th>
+          </tr>
+          <tr>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+          </tr>
+          <tr>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+          </tr>
+          <tr>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+          </tr>
+          <tr>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+          </tr>
+          <tr>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+            <td>Add Copy</td>
+          </tr>
+         </table>
+        </div>
+    
     
     <style> /* This section styles the HTML by selecting specific elements and providing style direction */
         
         .title { /* This is the parent container of the title element*/
-            padding: 50px;
+            padding-bottom: 20px;
+            max-width: 1200px; /* Title will stop growing once the screen width reaches 1200 pixels*/
+            margin: 0 auto; /* Always keeps the title centered*/
         }
         
         h1 { /* Targeting the h1 element in order to style it */
@@ -26,14 +63,35 @@
             font-size: 56px; 
             text-align: center; 
             border: 2px solid black; 
-            max-width: 1200px; /* Title will stop growing once the screen width reaches 1200 pixels*/
-            margin: 0 auto; /* Always keeps the image centered*/
         }
         
         img {
             display: block;
-            margin: 0 auto;
-            max-width: 100%;
+            margin: 0 auto; /* Always keeps the image centered*/
+            max-width: 100%; /* Will shrink the image when screen size changes in order to display 100% of the image*/
+        }
+        
+        .table {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 25px;
+        }
+        
+        th {
+            font-family: sans-serif;
+            font-size: 45px;
+            color: red;
+            background-color: black;
+        }
+        
+        td {
+            font-family: monospace;
+            font-size: 20px;
         }
     
     </style>
