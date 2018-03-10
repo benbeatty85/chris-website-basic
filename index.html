@@ -13,10 +13,10 @@
     
         <img src="logo.jpeg" alt="logo of school">
     
-        <div class="table">
-          <table>
-          <tr>
-            <th>Subjects</th>
+        <div class="table"> <!-- A container for the table -->
+          <table> <!--Element to define a table -->
+          <tr> <!--Element to define a table row -->
+            <th>Subjects</th> <!-- Element to define a table heading -->
             <th>Teachers</th> 
             <th>Periods</th>
           </tr>
@@ -71,15 +71,15 @@
         }
         
         img {
-            display: block;
+            display: block; /*Displays an element as a block element. It starts on a new line, and takes up the whole width*/
             margin: 0 auto; /* Always keeps the image centered*/
             max-width: 100%; /* Will shrink the image when screen size changes in order to display 100% of the image*/
         }
         
         .table {
-            display: flex;
-            justify-content: center;
-            padding: 40px;
+            display: flex; /*Displays an element as a block-level flex container*/
+            justify-content: center; /*To make sure the table is always centered*/
+            padding: 40px; /*Padding creates separation and space within the container*/
         }
         
         th, td {
